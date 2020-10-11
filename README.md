@@ -1,8 +1,8 @@
 # webpages content
 Snake Game: 
-- Try it [here](https://sarahlucke.github.io/SnakeGame/) 
-- View [Code](https://github.com/SarahLucke/SnakeGame)
+- Try it [here](https://sarahlucke.github.io/playground/SnakeGame/) 
+- View [Code](https://github.com/SarahLucke/playground/SnakeGame)
 
 Brickout Game:
-- Try it [here](https://sarahlucke.github.io/BrickOutGame/)
-- View [Code](https://github.com/SarahLucke/BrickOutGame)
+- Try it [here](https://sarahlucke.github.io/playground/BrickOutGame/)
+- View [Code](https://github.com/SarahLucke/playground/BrickOutGame)
