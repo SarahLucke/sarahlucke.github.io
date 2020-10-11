@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Info: Created on 11.03.2018 from following tutorial:
+https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript
+ -->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Breakout Game</title>
+    <link rel="stylesheet" type="text/css" href="pageStyle.css">
+</head>
+<body>
+<div class="pageContainer">
+  <div class="centering" id="center">
+
+    <div id="popup">
+        <div>Enter your name:</div>
+        <input id="name" type="text"/><br/>
+        <button id="submit" onclick="sendName()">Submit</button>
+        <button onclick="closePopup()">Cancel</button>
+    </div>
+
+    <div class="instruct">
+      <h3>Menu: </h3>
+      <div class="menu">
+        <p>brick pattern:</p>
+        <input type="radio" id="normal" name=pattern" onchange="refresh()"><label for="normal"> standard</label>
+        <br/>
+        <input type="radio" id="mixed" name=pattern" checked onchange="refresh()"><label for="mixed"> mixed (no highscore)</label>
+      </div>
+      <h3>Controls: </h3>
+      <p> Mouse to move paddle;<br>
+        Move mouse outside of game area to pause the game</p>
+      <h3>Notes:</h3>
+      <p>Current bugs: none that I know of
+      </p>
+      <p>
+        Highscore for mixed pattern does not make sense, since the level and number of bricks is completely random and therefore not comparable.
+      </p>
+      <p>
+      The scenario where the ball goes in between bricks is a feature, not a bug. Comes with the price of shitty collision detection though.</p>
+    </div>
+
+    <canvas id="DrawingArea" width="480" height="600"></canvas>
+
+    <div class="high">
+      <h4>Highscores:</h4>
+      <div id="highscores">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>

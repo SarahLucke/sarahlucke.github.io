@@ -1,0 +1,69 @@
+
+  :root {
+    --menu-width: 300px;
+    --hs-width: 200px;
+    --popup-width: 300px;
+    --canvas-width: 480px;
+    --space-width: 5px;
+  }
+  .pageContainer{
+    width: 100%;
+    height: 100%;
+  }
+  .centering {
+    width: calc(var(--menu-width) + var(--space-width) + var(--canvas-width) + var(--space-width) + var(--hs-width));
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    /* border: 1px solid red; */
+  }
+  #popup {
+      width: var(--popup-width);
+      height:100px;
+      margin: 0 0 0 calc(var(--menu-width) + var(--space-width) + (var(--canvas-width) - var(--popup-width))/2 - 20px);
+      padding: 20px;
+      box-shadow: 10px 10px 5px grey;
+      background-color: #d9d9d9;
+      position: absolute;
+      border: 1px solid black;
+      z-index: 1; /* display on top of anything else */
+      display:none;
+  }
+  canvas {
+    background: #eee;
+    position: relative;
+    margin: 0 0 0 calc(var(--menu-width) + var(--space-width));
+  }
+  .instruct {
+    width: var(--menu-width);
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    margin: 0;
+    /* border: 1px solid black; */
+  }
+  .high {
+    width: var(--hs-width);
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    margin: 0 0 0 calc(var(--canvas-width) + var(--menu-width) + var(--space-width) * 2);
+    /* border: 1px solid black; */
+  }
+  #highscores {
+    width: var(--hs-width);
+  }
+  .hs-table{
+    border-collapse: collapse;
+  }
+  .hs-table, .hs-table td, .hs-table th{
+    border: 1px solid black;
+  }
+  .hs-table td, .hs-table th {
+    text-align: left;
+    width: calc(var(--hs-width)/2);
+  }
+  .controls{
+    /* border: none; */
+  }
